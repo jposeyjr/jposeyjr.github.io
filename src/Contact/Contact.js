@@ -8,7 +8,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('working')
     //from formspree.io
     const form = e.target;
     const data = new FormData(form);
