@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
   blogContentWrapper: {
-    color: 'white',
+    color: '#FFFFFF',
     maxWidth: 1280,
     width: '100%',
   },

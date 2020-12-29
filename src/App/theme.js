@@ -15,12 +15,7 @@ let theme = createMuiTheme({
       primary: '#FFFFFF',
       secondary: '#000000',
     },
-    pink: {
-      main: '#F58A07',
-    },
-    orange: {
-      main: '#F58A07',
-    },
+    divider: '#FFFFFF',
   },
 });
 theme = responsiveFontSizes(theme);
