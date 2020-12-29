@@ -18,22 +18,20 @@ export default makeStyles((theme) => ({
     },
   },
   paper: {
-    padding: theme.spacing(2),
     maxWidth: 600,
     backgroundColor: theme.palette.background.default,
-    margin: theme.spacing(4),
-    width: 600,
   },
   form: {
     display: 'flex',
     flexDirection: 'column',
     background: theme.palette.background.default,
+    width: 400,
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+    },
   },
   buttons: {
-    maxWidth: 400,
     margin: theme.spacing(1),
-    display: 'flex',
     color: theme.palette.text.primary,
-    justifyContent: 'space-between',
   },
 }));

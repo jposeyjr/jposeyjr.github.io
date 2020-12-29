@@ -18,9 +18,9 @@ const Contact = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        setStatus({ status: 'SUCCESS' });
+        setStatus('SUCCESS');
       } else {
-        setStatus({ status: 'ERROR' });
+        setStatus('ERROR');
       }
     };
     xhr.send(data);
@@ -31,11 +31,12 @@ const Contact = () => {
       <Typography variant='h2' component='h1'>
         Contact Me
       </Typography>
-      <Grid item>
-        <Paper className={classes.paper}>
+      <Grid item xs={12}>
+        <Paper className={classes.paper} height='100vh'>
           <form
             autoComplete='off'
             noValidate
+            flex={1}
             className={`${classes.root} ${classes.form}`}
             onSubmit={handleSubmit}
             action='https://formspree.io/f/mqkggwbv'
