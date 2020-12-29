@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/me/static/css/main.a84e9e28.chunk.css",
+    "main.js": "/me/static/js/main.c09ca065.chunk.js",
+    "main.js.map": "/me/static/js/main.c09ca065.chunk.js.map",
+    "runtime-main.js": "/me/static/js/runtime-main.5a045aa1.js",
+    "runtime-main.js.map": "/me/static/js/runtime-main.5a045aa1.js.map",
+    "static/js/2.ee3178cd.chunk.js": "/me/static/js/2.ee3178cd.chunk.js",
+    "static/js/2.ee3178cd.chunk.js.map": "/me/static/js/2.ee3178cd.chunk.js.map",
+    "index.html": "/me/index.html",
+    "static/css/main.a84e9e28.chunk.css.map": "/me/static/css/main.a84e9e28.chunk.css.map",
+    "static/js/2.ee3178cd.chunk.js.LICENSE.txt": "/me/static/js/2.ee3178cd.chunk.js.LICENSE.txt",
+    "static/media/coding-924920_1920.5a6b9b53.jpg": "/me/static/media/coding-924920_1920.5a6b9b53.jpg",
+    "static/media/headshot.8f09eed5.jpg": "/me/static/media/headshot.8f09eed5.jpg",
+    "static/media/screenshot.97ccceba.png": "/me/static/media/screenshot.97ccceba.png",
+    "static/media/sherlock.1195fe20.png": "/me/static/media/sherlock.1195fe20.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a045aa1.js",
+    "static/js/2.ee3178cd.chunk.js",
+    "static/css/main.a84e9e28.chunk.css",
+    "static/js/main.c09ca065.chunk.js"
+  ]
+}
