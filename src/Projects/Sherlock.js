@@ -14,7 +14,7 @@ import sherlock from '../images/sherlock.png';
 
 const Sherlock = () => {
   const sherlockText =
-    'Sherlock is a SASS application in development for those with vision impairments. You can enter a websites URL and get back an image alt text if it is missing, form labels for forms without them and text from the site in a response area.';
+    'Sherlock is an application in development for those with vision impairments. You can enter a websites URL and get back an image alt text if it is missing, form labels for forms without them and text from the site in a response area.';
 
   const classes = useStyles();
   const [chipData] = useState([
