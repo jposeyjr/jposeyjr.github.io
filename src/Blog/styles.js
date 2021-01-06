@@ -25,6 +25,9 @@ export default makeStyles((theme) => ({
     fontWeight: 800,
     paddingBottom: theme.spacing(3),
   },
+  article: {
+    margin: theme.spacing(2),
+  },
   card: {
     maxWidth: '100%',
   },

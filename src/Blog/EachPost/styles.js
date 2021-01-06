@@ -12,12 +12,12 @@ export default makeStyles((theme) => ({
   img: {
     width: '100%',
     height: '100%',
+    margin: theme.spacing(1),
   },
   card: {
     display: 'flex',
     flexDirection: 'column',
     background: theme.palette.background.default,
-    boxShadow: theme.shadows[4],
     color: 'white',
   },
   imgWrapper: {

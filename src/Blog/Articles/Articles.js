@@ -6,6 +6,7 @@ import {
   CardMedia,
   Typography,
   Box,
+  Grid,
   Avatar,
   Link,
 } from '@material-ui/core';
@@ -19,7 +20,7 @@ const Articles = () => {
   const artPosts = useSelector((state) => state);
   const classes = useStyles();
   return artPosts.map((posts) => (
-    <div key={posts.id}>
+    <div key={posts.id} className={classes.article}>
       <Card className={classes.card}>
         <CardActionArea component={RouterLink} to={`/blog/${posts.id}`}>
           <CardMedia

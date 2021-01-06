@@ -33,9 +33,12 @@ const App = () => {
           <Blog />
         </Route>
         {Posts.map((posts) => (
-          <Route key={posts.id} exact path={'/blog/' + posts.id}>
-            <EachPost key={posts.id} />
-          </Route>
+          <Route
+            key={posts.id}
+            exact
+            path={'/blog/' + posts.id}
+            component={() => <EachPost posts={posts} />}
+          />
         ))}
       </Router>
     </ThemeProvider>
