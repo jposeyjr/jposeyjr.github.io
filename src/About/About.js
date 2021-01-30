@@ -3,8 +3,7 @@ import useStyles from './styles.js';
 
 const About = () => {
   const classes = useStyles();
-  const aboutText =
-    "Welcome to my personal website, to help you get to know me more. I'm a full stack software engineer with knowledge in Javascript, Python, Express, React, Redux, Node, Postgresql, MongoDB, Heroku, Pair Programming, Git and Github. One personal note about me is I love Japanese culture as a whole I'm working on learning Japanese.";
+  const aboutText = `Welcome to my website, used as a platform to show off my work including the site, and to help you get to know me more. I'm a full-stack software engineer with knowledge in Javascript, Python, Java, Express, React, Redux, Node, Postgresql, MongoDB, Passport, Heroku, Pair Programming, Git, and Github. One personal note about me is I love Japanese culture as a whole I'm working on learning Japanese.`;
   return (
     <Container maxWidth='lg' className={classes.about}>
       <Box className={classes.hero}>

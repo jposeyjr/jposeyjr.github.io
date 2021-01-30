@@ -70,7 +70,7 @@ const content = (
 
 const post_1_Obj = {
   id: 1,
-  date: new Date().toDateString(),
+  date: new Date(2019, 11, 27).toDateString(),
   title: 'Finding True Love #Coding',
   blogImg: img,
   snippet:

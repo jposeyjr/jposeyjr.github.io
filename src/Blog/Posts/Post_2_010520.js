@@ -74,7 +74,7 @@ const content = (
 
 const post_2_Obj = {
   id: 2,
-  date: new Date().toDateString(),
+  date: new Date(2020, 0, 5).toDateString(),
   title: 'Learning Java 2021',
   blogImg: img,
   snippet:
