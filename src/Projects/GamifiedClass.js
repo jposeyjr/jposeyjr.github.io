@@ -6,6 +6,7 @@ import {
   CardContent,
   CardMedia,
   Chip,
+  Box,
   Link,
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -13,7 +14,7 @@ import useStyles from './styles';
 import gamified from '../images/gamified.png';
 
 const Gamified = () => {
-  const gamifiedText = `Gamified classrooms allow teachers to easily and quickly reward students for participating in the classroom and keep track of all students and activity levels throughout one or many classrooms. The gamified classroom is aimed to be quick, simple, and easy with limited intrusiveness to allow for quick approval by parents and school boards.`;
+  const gamifiedText = `Gamified class allow teachers to easily and quickly reward students for participating in the classroom and keep track of all students and activity levels throughout one or many classrooms. The gamified classroom is aimed to be quick, simple, and easy with limited intrusiveness to allow for quick approval by parents and school boards.`;
 
   const classes = useStyles();
   const [chipData] = useState([
@@ -30,33 +31,29 @@ const Gamified = () => {
   return (
     <Card className={classes.root}>
       <CardHeader
+        className={classes.titleCard}
         title={
-          <Typography
-            className={classes.margin}
-            color='textSecondary'
-            variant='h4'
-            component='h3'
-          >
-            Gamified Classroom
+          <Typography color='textSecondary' variant='h4' component='h3'>
+            Gamified Class
           </Typography>
         }
         action={
-          <Link
-            className={classes.icons}
-            href='https://github.com/jposeyjr/gamifyclassroom'
-            aria-label='github for gamified project'
-          >
-            <GitHubIcon />
-          </Link>
-        }
-        action={
-          <Link
-            className={classes.icons}
-            href='https://gamify-classroom.herokuapp.com/#/home'
-            aria-label='github for gamified project'
-          >
-            Heroku
-          </Link>
+          <Box className={classes.boxLinks}>
+            <Link
+              className={classes.icons}
+              href='https://github.com/jposeyjr/gamifyclassroom'
+              aria-label='github for gamified project'
+            >
+              <GitHubIcon />
+            </Link>
+            <Link
+              className={classes.icons}
+              href='https://gamify-classroom.herokuapp.com/#/home'
+              aria-label='heroku for gamified project'
+            >
+              Heroku
+            </Link>
+          </Box>
         }
       />
       <CardMedia

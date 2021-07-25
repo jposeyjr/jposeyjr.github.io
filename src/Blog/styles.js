@@ -25,11 +25,11 @@ export default makeStyles((theme) => ({
     fontWeight: 800,
     paddingBottom: theme.spacing(3),
   },
-  article: {
-    margin: theme.spacing(2),
-  },
   card: {
     maxWidth: '100%',
+    height: '100%',
+    margin: theme.spacing(2),
+    display: 'grid',
   },
   media: {
     height: 240,

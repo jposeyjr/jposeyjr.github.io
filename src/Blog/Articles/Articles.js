@@ -20,11 +20,12 @@ const Articles = () => {
   const artPosts = useSelector((state) => state);
   const classes = useStyles();
   return artPosts.map((posts) => (
-    <div key={posts.id} className={classes.article}>
+    <Grid key={posts.id} item xs={12} sm={6} md={4}>
       <Card className={classes.card}>
         <CardActionArea component={RouterLink} to={`/blog/${posts.id}`}>
           <CardMedia
-            className={classes.media}
+            component='img'
+            height='200'
             image={posts.blogImg}
             title={posts.title}
             aria-label={posts.title}
@@ -46,22 +47,11 @@ const Articles = () => {
         <CardActions className={classes.cardActions}>
           <Box className={classes.author}>
             <Avatar src={avatarImg} alt='headshot of james posey' />
-            <Box ml={2}>
-              <Typography
-                variant='subtitle2'
-                color='textSecondary'
-                component='p'
-              >
-                James Posey
-              </Typography>
-              <Typography
-                variant='subtitle2'
-                color='textSecondary'
-                component='p'
-              >
-                {posts.date}
-              </Typography>
-            </Box>
+          </Box>
+          <Box ml={2}>
+            <Typography variant='subtitle2' color='textSecondary' component='p'>
+              James Posey
+            </Typography>
           </Box>
           <Box>
             <Link
@@ -74,7 +64,7 @@ const Articles = () => {
           </Box>
         </CardActions>
       </Card>
-    </div>
+    </Grid>
   ));
 };
 

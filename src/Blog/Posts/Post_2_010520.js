@@ -1,73 +1,63 @@
 import React, { Fragment } from 'react';
-import { Typography, Link } from '@material-ui/core';
-import img from '../../images/coffee-2691_640.jpg';
+import { Typography } from '@material-ui/core';
+import img from '../../images/pihole.png';
 
 const content = (
   <Fragment>
     <Typography variant='h6' component='h2' paragraph>
-      Learning Java 2021
+      Build You Own Ad Blocker
     </Typography>
     <Typography paragraph component='p'>
-      Java the old language that seems to never die yet is always said to be
-      dying. But why Java? Because when doing research into the next language I
-      wanted to learn I had a couple of requirements. One I wanted it to have a
-      lot of job posting. Two it had to be able to be used for backend as I
-      wanted another tool in my belt. Three it had to do something that
-      Javascript didn't do or do well.That leads me to a couple languages and
-      Java checked the most boxes. Go was a close runner up and if it had more
-      job listings I would of hands down chosen it. Once in a role, I will learn
-      it next, as it is amazing.
+      It has been busy with my final week of school and completing our group
+      client project. It came together amazingly and if you want to look at the
+      result check out the project section on the main page. Doing the whole
+      project remotely in a team was a great experience and the client loved the
+      final results! After I finished and graduated I wanted to combine my
+      software knowledge with hardware. I got a raspberry pi as I've read it is
+      one of the best all in one system to start with.
     </Typography>
     <Typography paragraph component='p'>
-      I will say I was shocked when looking for resources to learn Java and
-      found it rather sparse. You other had very out-dated tutorials though
-      solid and useable had some syntax that was no longer best practice. Then
-      you had books or videos both being paid if you wanted anything quality
-      which is fine but odd for such an old language. Lastly, you had tutorials
-      that were of good quality but didn't go deep into the language and only
-      covered very basic syntax that didn't offer much to someone that knew one
-      language.
+      While I was waiting for my PI to come in the mail I started looking up
+      what projects I wanted to make and things that I could do with it. I found
+      a lot of options and also that I would want some more things! I went ahead
+      and ordered an Arduino board and some parts to make an invention I had in
+      mind. As I was looking at PI projects I knew I wanted to use PI-Hole.
     </Typography>
     <Typography paragraph component='p'>
-      I found a Udemy course as that best option and paid the $10 to get started
-      and have a solid road map to follow to limit wasting time piecing together
-      resources. So far I'm loving everything about it especially Intellij it is
-      such a mature IDE gear to make coding in Java so much quicker and easier.
-      A lot of what I didn't like about Java when I first say it is partially
-      fixed by Intellij, instead of typing out System.out.println("blah blah
-      blah") simply typing sout and it is done. Similarly for generating
-      constructors, getters, setters, etc. All can be done with a short line of
-      code or a shortcut! Version control flow seems to be the only shortcoming
-      and that might be my inexperience with it. I did try Vscode and did like
-      it but felt it still needs some time and work.
+      PI-Hole runs on your network and blocks ads for all your devices that are
+      connected be it a phone with mobile games, laptop, or desktop it will
+      block the ads! Super amazing and helps not only prevent annoying ads it
+      also helps prevent viruses as many of them come from ads embedded in
+      sites.
     </Typography>
     <Typography variant='h6' component='h3' paragraph>
-      Fixing The Issue
+      The Set Up
     </Typography>
     <Typography component='p' paragraph>
-      Needless to say, it has been a very fun start but a little rocky. One of
-      my old bosses used to say you can always come to me with problems BUT you
-      better have at least one solution before you talk to me. Which I always
-      thought was a great approach and mindset to have. With my Java learning
-      journey, I found it very clear there is a need for newer refreshed
-      tutorials that are FREE for beginner and intermitted programmers. Even
-      though Java might be dying (i.e 2nd most job positions in the US) I think
-      it is 100% worth making new content for.
+      So if you don't have one you will need a raspberry pi, sd card and I would
+      get the cana kit as they are a great deal and come with everything you
+      need. Once you have that if you got the kit with noobs (the OS for the PI)
+      you can just start it up and should see a desktop. If it didn't come with
+      noobs installed or you want a different OS you can follow guides that walk
+      you through installing it for your OS of choice and get it booted up.
     </Typography>
     <Typography component='p' paragraph>
-      With that being said I started a youtube channel to help others learn Java
-      with me for free. I will teach the fundamentals of Java with job
-      interviews in mind and lead all the way up to backend server usage of Java
-      with modern technologies and legacy usage. You can find that here at
-      <Link
-        href='https://www.youtube.com/channel/UCnPT8iGT-4fnmsiR8CwQH8Q'
-        color='secondary'
-      >
-        {' '}
-        Java Lesson One
-      </Link>
-      . Please like and subscribe to the channel to stay up to date on my latest
-      videos!
+      Once you got it booted up and going you can now install PI-Hole using I
+      recommend going to their site and you can walk through their how to
+      install. I don't want to get into the specifics of the install or setup of
+      PI-Hole as that can vary greatly on your network setup. Just know there
+      are tons of guides and youtube videos for every type of setup out there. I
+      had some issues with the need to set it up as a DHCP server instead of the
+      normal route and was quickly able to google the answer to my problem.
+    </Typography>
+    <Typography component='p' paragraph>
+      Once you have it installed and set up, you can go to the admin board which
+      is the image above. It will show you all the stats for things it has
+      blocked and this number will quickly go up each day as you start to browse
+      more. It is truly amazing and scary to see the number of block queries and
+      dominions each day. You will still get some ads and for that, I have the
+      normal adblocker extension installed to prevent any that happen to get
+      through but it is very rare.
     </Typography>
   </Fragment>
 );
@@ -75,10 +65,10 @@ const content = (
 const post_2_Obj = {
   id: 2,
   date: new Date(2020, 0, 5).toDateString(),
-  title: 'Learning Java 2021',
+  title: 'RaspberryPi Hole',
   blogImg: img,
-  snippet:
-    "Java the old language that seems to never die yet is always said to be dying. But why Java? Because when doing research into the next language I wanted to learn I had a couple of requirements. One I wanted it to have a lot of job posting. Two it had to be able to be used for backend as I wanted another tool in my belt. Three it had to do something that Javascript didn't do or do well.",
+  snippet: `It has been busy with my final week of school and completing our group client project. It came together amazingly and if you want to look at the
+    result check out the project section on the main page.`,
   content: content,
 };
 

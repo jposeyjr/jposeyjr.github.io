@@ -6,6 +6,7 @@ import {
   CardContent,
   CardMedia,
   Chip,
+  Box,
   Link,
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -25,24 +26,29 @@ const Pacman = () => {
   return (
     <Card className={classes.root}>
       <CardHeader
+        className={classes.titleCard}
         title={
-          <Typography
-            className={classes.margin}
-            color='textSecondary'
-            variant='h4'
-            component='h3'
-          >
+          <Typography color='textSecondary' variant='h4' component='h3'>
             Pacman
           </Typography>
         }
         action={
-          <Link
-            className={classes.icons}
-            href='https://github.com/jposeyjr/solo-spike'
-            aria-label='github for pacman project'
-          >
-            <GitHubIcon />
-          </Link>
+          <Box className={classes.boxLinks}>
+            <Link
+              className={classes.icons}
+              href='https://github.com/jposeyjr/solo-spike'
+              aria-label='github for pacman project'
+            >
+              <GitHubIcon />
+            </Link>
+            <Link
+              className={classes.icons}
+              href='https://jposeyjr.github.io/solo-spike/'
+              aria-label='demo for pacman game'
+            >
+              Play It!
+            </Link>
+          </Box>
         }
       />
       <CardMedia
@@ -52,7 +58,6 @@ const Pacman = () => {
         title='pacman'
       />
       <CardContent>
-        <Link href='https://jposeyjr.github.io/solo-spike/'>Playable game</Link>
         <Typography className={classes.margin}>{pacmanText}</Typography>
         <div className={classes.techList}>
           {chipData.map((data) => {

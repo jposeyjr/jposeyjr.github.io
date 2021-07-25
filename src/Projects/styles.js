@@ -10,7 +10,6 @@ export default makeStyles((theme) => ({
     height: '100%',
     margin: 'auto',
     color: theme.palette.text.secondary,
-    // transition: '0.3s',
     boxShadow: '0 8px 40px -12px rgba(0,0,0,0.3)',
     '&:hover': {
       boxShadow: '0 16px 70px -12.125px rgba(0,0,0,0.3)',
@@ -30,5 +29,19 @@ export default makeStyles((theme) => ({
   media: {
     height: 0,
     paddingTop: '56.25%',
+  },
+  icons: {
+    marginRight: '10px',
+  },
+  boxLinks: {
+    marginTop: '10px',
+  },
+  titleCard: {
+    padding: '0px 0px 15px 0px',
+  },
+  link: {
+    '&:focus, &:hover, &:visited, &:link, &:active': {
+      color: '#1DA1F2',
+    },
   },
 }));
